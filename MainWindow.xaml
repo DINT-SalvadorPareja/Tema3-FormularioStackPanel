@@ -6,6 +6,15 @@
         xmlns:local="clr-namespace:Tema3_FormularioStackPanel"
         mc:Ignorable="d"
         Title="Formularios" MaxHeight="300" MaxWidth="900" MinHeight="200" MinWidth="300" Height="260.049" Width="652.664" Icon="Assets/32.ico">
+    <Window.Resources>
+        <Style TargetType="{x:Type TextBlock}" x:Key="Textos">
+            <Setter Property="FontSize" Value="16"></Setter>
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+        </Style>
+        
+        
+
+    </Window.Resources>
     <StackPanel>
         <StackPanel Margin="5">
             <StackPanel.Background>
@@ -15,7 +24,8 @@
                     <GradientStop Color="#FF009D15" Offset="0.953"/>
                 </LinearGradientBrush>
             </StackPanel.Background>
-            <TextBlock FontSize="16" FontWeight="Bold">Nombre</TextBlock>
+            <TextBlock Style="{StaticResource Textos}">Nombre</TextBlock>
+            
             <TextBox Margin="5"></TextBox>
         </StackPanel>
         <StackPanel Margin="5">
@@ -26,7 +36,7 @@
                     <GradientStop Color="#FF1D3E6D" Offset="0.61"/>
                 </LinearGradientBrush>
             </StackPanel.Background>
-            <TextBlock FontSize="16" FontWeight="Bold">Dirección</TextBlock>
+            <TextBlock Style="{StaticResource Textos}">Dirección</TextBlock>
             <TextBox Margin="5"></TextBox>
         </StackPanel>
         <StackPanel Margin="5">
@@ -37,7 +47,7 @@
                     <GradientStop Color="#FF8F8F8F" Offset="0.373"/>
                 </LinearGradientBrush>
             </StackPanel.Background>
-            <TextBlock FontSize="16" FontWeight="Bold">Correo Electronico</TextBlock>
+            <TextBlock Style="{StaticResource Textos}">Correo Electronico</TextBlock>
             <TextBox Margin="5" HorizontalAlignment="Left" MinWidth="500" MaxWidth="500"></TextBox>
 
         </StackPanel>
